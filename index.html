@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="Style.css" />
+    <title>La Femme de Ma Vie</title>
+</head>
+<body>
+    <header class="intro">
+        <h1 class="intro-message">Je vous présente la femme de ma vie</h1>
+    </header>
+
+    <main>
+        <section class="why-love">
+            <h2 class="centered">Pourquoi c'est elle que mon coeur a choisit ?</h2>
+            <div class="videos">
+                <article class="video-container">
+                    <video class="video" src="manu1.mp4" autoplay loop muted title="Elle est trop classe"></video>
+                    <div class="caption">Elle est trop classe</div>
+                </article>
+                <article class="video-container">
+                    <video class="video" src="manu2.mp4" autoplay loop muted title="Elle est trop belle"></video>
+                    <div class="caption">Elle est trop belle</div>
+                </article>
+                <article class="video-container">
+                    <video class="video" src="manu3.mp4" autoplay loop muted title="Elle sait faire semblant de danser"></video>
+                    <div class="caption">Elle sait faire semblant de danser</div>
+                </article>
+            </div>
+        </section>
+
+        <blockquote class="romantic-quote">
+            “L’amour ne se regarde pas, il se vit...” 💞
+        </blockquote>
+
+        <section class="fav-songs">
+            <h2 class="centered">Ses Musiques Préférées</h2>
+            <div class="playlist">
+                <div class="player">
+                    <p id="current-track">🎶 Sélectionnez une chanson 🎶</p>
+                    <audio id="audio" controls></audio>
+                </div>
+                <div class="track" onclick="playTrack('Ch1.mp3', 'Ma Chanson Préférée 1')">
+                    🎵 Sa Chanson Préférée 1
+                </div>
+                <div class="track" onclick="playTrack('Ch2.mp3', 'Ma Chanson Préférée 2')">
+                    🎵 Sa Chanson Préférée 2
+                </div>
+                <div class="track" onclick="playTrack('Ch3.mp3', 'Ma Chanson Préférée 3')">
+                    🎵 Sa Chanson Préférée 3
+                </div>
+            </div>
+        </section>
+
+        <blockquote class="romantic-quote">
+            “La vraie beauté est dans le cœur de celle qu’on aime.” 💗
+        </blockquote>
+
+        <section class="fav-foods">
+            <h2 class="centered">Ses Plats Préférés</h2>
+            <div class="dishes">
+                <figure class="dish">
+                    <img src="attieke.jpeg" alt="Attiéké" class="dish-img" />
+                    <figcaption>ATTIEKE</figcaption>
+                </figure>
+                <figure class="dish">
+                    <img src="koliko.jpeg" alt="Koliko" class="dish-img" />
+                    <figcaption>KOLIKO</figcaption>
+                </figure>
+                <figure class="dish">
+                    <img src="fufu.jpeg" alt="Fufu" class="dish-img" />
+                    <figcaption>FUFU</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <blockquote class="romantic-quote">
+            “Ton sourire est ma lumière préférée.” ✨
+        </blockquote>
+<!--   
+        <section class="love-letter">
+            <h2 class="centered">Lettre d’amour</h2>
+            <div class="envelope">
+                <button id="toggle-message" class="glow">OUVREZ MOI !</button>
+                <div id="friendship-message" class="love-message hidden">
+                    On parle souvent de l'amour de sa vie, de la personne qu'on attend pour tout bouleverser... Mais en 2021, ce n’est pas l’amour que j’ai rencontré. C’est bien plus rare, bien plus vrai : j’ai rencontré **une amie exceptionnelle**.<br><br>
+                    Une jeune fille belle, intelligente, pleine de vie... et tellement sexy qu’elle aurait pu être une tentation. Et pourtant, elle est devenue quelque chose d'encore plus précieux. Je ne savais pas à ce moment-là qu’elle allait me faire **goûter à l’amitié sincère**, celle qui ne triche pas, qui ne juge pas, qui te soutient même quand tout vacille.<br><br>
+                    Avec elle, j’ai découvert qu’une vraie amitié entre un homme et une femme, ça existe. Elle est cette lumière douce qui rend mes journées plus belles, ce regard qui comprend sans avoir besoin de parler, ce sourire qui répare les blessures silencieuses. <br><br>
+                    Elle n’est pas juste une amie. Elle est **mon repère, mon calme, ma vérité**. On ne partage peut-être pas de promesses d’amour éternel, mais ce qu’on partage vaut tout l’or du monde : **une confiance brute, une complicité rare, et des souvenirs qui collent au cœur**.<br><br>
+                    Alors merci à toi, ma meilleure amie. Merci d’être entrée dans ma vie sans prévenir. Merci pour ta force, ton humour, ta sincérité et ta beauté – oui, ta beauté dans toutes ses formes. <br><br>
+                    Ce message, c’est mon hommage à **toi**, et à cette forme d’amour que les gens oublient trop souvent : l’amitié vraie. Celle qui ne fait pas de bruit, mais qui change tout. 💛
+                </div>
+                <div class="envelope">
+            <button id="toggle-message" class="glow">OUVREZ MOI !</button>
+            <div id="love-message" class="love-message hidden">
+                On parle souvent de l'amour de sa vie, de la personne qu'on attend pour tout bouleverser... Mais en 2021, ce n’est pas l’amour que j’ai rencontré. C’est bien plus rare, bien plus vrai : j’ai rencontré <strong>une amie exceptionnelle</strong>.<br><br>
+                Une jeune fille belle, intelligente, pleine de vie... et tellement sexy qu’elle aurait pu être une tentation. Et pourtant, elle est devenue quelque chose d'encore plus précieux. Je ne savais pas à ce moment-là qu’elle allait me faire <strong>goûter à l’amitié sincère</strong>, celle qui ne triche pas, qui ne juge pas, qui te soutient même quand tout vacille.<br><br>
+                Avec elle, j’ai découvert qu’une vraie amitié entre un homme et une femme, ça existe. Elle est cette lumière douce qui rend mes journées plus belles, ce regard qui comprend sans avoir besoin de parler, ce sourire qui répare les blessures silencieuses.<br><br>
+                Elle n’est pas juste une amie. Elle est <strong>mon repère, mon calme, ma vérité</strong>. On ne partage peut-être pas de promesses d’amour éternel, mais ce qu’on partage vaut tout l’or du monde : <strong>une confiance brute, une complicité rare, et des souvenirs qui collent au cœur</strong>.<br><br>
+                Alors merci à toi, ma meilleure amie. Merci d’être entrée dans ma vie sans prévenir. Merci pour ta force, ton humour, ta sincérité et ta beauté – oui, ta beauté dans toutes ses formes.<br><br>
+                Ce message, c’est mon hommage à <strong>toi</strong>, et à cette forme d’amour que les gens oublient trop souvent : l’amitié vraie. Celle qui ne fait pas de bruit, mais qui change tout. 💛
+            </div>
+        </div>
+        </section> -->
+        <div class="envelope">
+            <button id="toggle-message" class="glow">Ouvrez moi !</button>
+            <div id="love-message" class="love-message hidden">
+                On parle souvent de l'amour de sa vie, de la personne qu'on attend pour tout bouleverser... Mais en 2021, ce n’est pas l’amour que j’ai rencontré. C’est bien plus rare, bien plus vrai : j’ai rencontré une amie exceptionnelle.<br><br>
+                Une jeune fille belle, intelligente, pleine de vie... et tellement sexy qu’elle aurait pu être une tentation. Et pourtant, elle est devenue quelque chose d'encore plus précieux. Je ne savais pas à ce moment-là qu’elle allait me faire goûter à l’amitié sincère, celle qui ne triche pas, qui ne juge pas, qui te soutient même quand tout vacille.<br><br>
+                Avec elle, j’ai découvert qu’une vraie amitié entre un homme et une femme, ça existe. Elle est cette lumière douce qui rend mes journées plus belles, ce regard qui comprend sans avoir besoin de parler, ce sourire qui répare les blessures silencieuses. <br><br>
+                Elle n’est pas juste une amie. Elle est  mon repère, mon calme, ma vérité. On ne partage peut-être pas de promesses d’amour éternel, mais ce qu’on partage vaut tout l’or du monde : **une confiance brute, une complicité rare, et des souvenirs qui collent au cœur**.<br><br>
+                Alors merci à toi, ma meilleure amie. Merci d’être entrée dans ma vie sans prévenir. Merci pour ta force, ton humour, ta sincérité et ta beauté – oui, ta beauté dans toutes ses formes. <br><br>
+                Ce message, c’est mon hommage à toi, et à cette forme d’amour que les gens oublient trop souvent : l’amitié vraie. Celle qui ne fait pas de bruit, mais qui change tout. 💛
+
+                    <h3>Ton Besto Mario</h3>
+        
+            </div>
+        
+        <section class="time-together">
+            <h2 class="centered">Temps passé ensemble</h2>
+            <div class="countdown">
+                <p id="countdown"></p>
+            </div>
+        </section>
+    </main>
+
+    <script src="Script.js"></script>
+</body>
+</html>
